@@ -1,96 +1,19 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, input {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  font-family: 'Roboto', sans-serif;
-  min-width: 980px;
-  font-size: 13px;
-}
-
-body,
-html {
-  min-width: 320px;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px white inset;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: none;
-}
-
-a {
-  color: #000;
-}
-
-textarea {
-  resize: vertical;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input, label, select, div, span {
-  outline: none !important;
-  &:active, &:focus {
-    outline: none !important;
-  }
-}
-
-.bx-composite-btn {
-  display: none !important;
-}
-
-.cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .animate(@what, @speed) {
-  -webkit-transition: @what @speed linear;
-  -moz-transition: @what @speed linear;
-  -o-transition: @what @speed linear;
-  -ms-transition: @what @speed linear;
-  transition: @what @speed linear;
+  -webkit-transition-property: @what;
+  -moz-transition-property: @what;
+  -ms-transition-property: @what;
+  -o-transition-property: @what;
+  transition-property: @what;
+  -webkit-transition-duration: @speed;
+  -moz-transition-duration: @speed;
+  -ms-transition-duration: @speed;
+  -o-transition-duration: @speed;
+  transition-duration: @speed;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -ms-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
 
 .box-sh(@sx, @sy, @sb, @scolor) {
@@ -135,18 +58,32 @@ input, label, select, div, span {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color2', GradientType=0);
 }
 
-.inline {
-  vertical-align: top;
+.inline(@valign: top) {
+  vertical-align: @valign;
   display: inline-block;
   zoom: 1;
   *display: inline;
   list-style: none;
 }
 
-html {
-  overflow-y: scroll;
+.center_absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
-div{
-  background: #000;
 
+.bdrs(@val) {
+  -webkit-border-radius: @val;
+  -moz-border-radius: @val;
+  border-radius: @val;
+}
+
+.cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
