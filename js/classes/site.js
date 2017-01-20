@@ -4,9 +4,10 @@ class Site {
     }
 
     example_fun(val) {
-        val ? console.log(true) : console.log(false);
+     console.log(val);
     }
 }
+
 
 
 
