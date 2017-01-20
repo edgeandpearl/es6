@@ -29,17 +29,18 @@ function lazyRequireTasks(taskName, path, options) {
 
 const paths = {
     js: {
-        src: ['./js/classes/site.js', './js/classes/header.js', './js/classes/form.js', './js/classes/main_page.js', './js/classes/checkout.js', './js/classes/content.js'],
+        src: ['./js/classes/site.js', './js/classes/main_page.js'],
         dest: './js/'
     },
     libsJS: {
-        src: ['./js/libs/jquery-2.2.4.min.js','./js/libs/**/*.js'],
+        src: ['./js/libs/jquery.js','./js/libs/**/*.js'],
         dest: './js/'
     },
     less: {
         src: ['./css/*.less', '!./css/mixins.less', '!./css/reset.less'],
         dest: './css/'
     },
+
     cssLibs: {
         src: ['./js/libs/*.css', '!js/libs.js'],
         dest: './js/libs/'
