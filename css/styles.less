@@ -1,6 +1,52 @@
 @import "reset";
 @import "mixins";
 
-body{
+@font-face {
+  font-family: georgia;
+  src: url('../fonts/georgia.ttf');
+}
 
+.dev {
+  min-height: 4670px;
+}
+
+body {
+  background: url("/images/bg.jpg") center top no-repeat;
+
+  & > * {
+    opacity: 0.7;
+  }
+}
+
+.content-inner {
+  width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.top-block {
+  font-family: georgia;
+  min-height: 700px;
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0,0,0,0.5);
+  background: url("/images/top.png") center bottom no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__header {
+    font-size: 200px;
+    font-weight: 900;
+    color: #fff;
+    padding-top: 250px;
+  }
+
+  &__text {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    font-weight: 100;
+    font-size: 24px;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+  }
 }
