@@ -8,10 +8,16 @@
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=3,user-scalable=1"/>
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400,500,700&amp;subset=cyrillic-ext"
-          rel="stylesheet"/>
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function script() {
+            alert("I'm the ad");
+        };
+
+        document.getElementById('kek').onclick=function () {
+            script();
+        };
+    </script>
 </head>
 <body class="dev">
 
@@ -21,21 +27,158 @@
     </div>
 
     <div class='content'>
-        <div class="menu">
-            <span class="menu__item">Summary</span>
-            <span class="menu__item">General</span>
-            <span class="menu__item">Sights</span>
-            <span class="menu__item">Weather</span>
-            <span class="menu__item">What to Do</span>
-            <span class="menu__item">Residential Guide</span>
-            <span class="menu__item">Photos</span>
+        <div class="menu with-bottom-border">
+            <div class="menu__content">
+                <a href="#" class="menu__item menu__item-active">Summary</a>
+                <a href="#" id="kek" class="menu__item">General</a>
+                <a href="#" class="menu__item">Sights</a>
+                <a href="#" class="menu__item">Weather</a>
+                <a href="#" class="menu__item">What to Do</a>
+                <a href="#" class="menu__item">Residential Guide</a>
+                <a href="#" class="menu__item">Photos</a>
+            </div>
         </div>
+
+        <div class="content-block stats-block with-bottom-border">
+            <h2 class="block-header">Why you'll love vacation in Cuba</h2>
+            <div class="block-text">
+                It always had the allure a forbidden fruit. I love it for its uniqueness, creativity and survivalist spirit. I love it because, despite 60 years of setbacks, it remains an upbeat and open place. Walk down the street with a Cuban friend and, within one block, you’ll have received five handshakes, four kisses, three greetings of ‘dime hermano!’ and at least two invites into someone’s house.
+            </div>
+            <div class="stats">
+                <span class="stats__item">
+                    <img src="./images/trips.png" alt="trips"/>
+                    <div class="stats__item-count">1,920</div>
+                    <div class="stats__item-capture">Trips</div>
+                </span>
+                <span class="stats__item">
+                    <img src="./images/venues.png" alt="venues"/>
+                    <div class="stats__item-count">271</div>
+                    <div class="stats__item-capture">Venues</div>
+                </span>
+                <span class="stats__item">
+                    <img src="./images/tickets.png" alt="tickets"/>
+                    <div class="stats__item-count">3,321</div>
+                    <div class="stats__item-capture">Tickets Sold</div>
+                </span>
+                <span class="stats__item">
+                    <img src="./images/reviews.png" alt="reviews"/>
+                    <div class="stats__item-count">2,912</div>
+                    <div class="stats__item-capture">Reviews</div>
+                </span>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2 class="block-header">What Cuba is about</h2>
+            <div class="block-text">
+                Cuba is like a prince in a poor man’s coat; behind the sometimes shabby facades, gold dust lingers. It’s these rich dichotomies that make travel here the exciting. Trapped in a time warp and reeling from an economic embargo that has grated for more than half a century, this is a country where you can wave goodbye to everyday assumptions and expect the unexpected.
+            </div>
+
+            <div class="image-with-overlay-capture">
+                <div class="overlay-capture">
+                    <div class="overlay-capture__content">
+                        <h3 class="overlay-capture__header">Historical Heritage</h3>
+                        <p class="overlay-capture__text">
+                            Bereft of modern interference, Cuba’s colonial cities haven’t changed much since musket-toting pirates stalked the Caribbean. Atmosphere and architecture is particularly stirring in Havana, Trinidad and Camagüey where grandiose squares and cobbled streets tell erstwhile tales of opulence and intrigue.
+                        </p>
+                    </div>
+                </div>
+                <img class="underlying-image underlying-image_right" src="./images/heritage.png" alt="heritage">
+            </div>
+
+            <div class="image-with-overlay-capture">
+                <div class="overlay-capture overlay-capture_right">
+                    <div class="overlay-capture__content">
+                        <h3 class="overlay-capture__header">Astonishing Beaches</h3>
+                        <p class="overlay-capture__text">
+                            Whether you’re staying in a luxury hotel in Havana or exploring the rural charms of Vinales, in some ways it’s all the real Cuba. Some travellers might opt to miss the beach resort town of Varadero, but this energetic beachside paradise should still  be an option to consider as part of your Cuban travel plans.
+                        </p>
+                    </div>
+                </div>
+                <img class="underlying-image" src="./images/beaches.png" alt="beaches">
+            </div>
+        </div>
+
+        <div class="content-block cadillac with-bottom-border">
+            <h2 class="block-header">The Cadillacs of Cuba</h2>
+            <div class="yellow-capture">
+                <img src="./images/yellow-icon.png" alt="">
+                Hover for more info
+            </div>
+
+            <img class="cadillac__image" src="./images/cadillac.png" alt="cadillac">
+            <img class="cadillac__shadow" src="./images/car-shadow.png" alt="">
+
+            <div class="block-text">
+                The American trade embargo with Cuba in 1960 had the effect of instantly separating thousands of 1940s and 1950s Detroit-built cars from their spare parts supply. Convertibles were always popular, thanks to year-round tropical weather. The place for posing with your ride is hard to miss in Havana. The squares around Capitolio, a flattering copy of Washington’s Capitol building, are lined with 50-year-old American cars during daylight hours.
+            </div>
+        </div>
+
+        <div class="content-block">
+            <h2 class="block-header">Cuba in Photos</h2>
+            <div class="block-text with-short-bottom-border">
+                When you think of Carribean, you’re probably not thinking of Cuba. It’s the lone acacia silhouetted against a horizon stretching into eternity. It’s the snow-capped mountain almost on the equator and within sight of harsh deserts. It’s the lush, palm-fringed coastline of the Indian Ocean, it’s the Great Rift Valley that once threatened to tear the continent asunder, and it’s the dense forests reminiscent of the continent’s heart. In short, Kenya is a country of epic landforms that stir our deepest longings for this very special continent.
+            </div>
+
+            <div class="carousel"></div>
+        </div>
+
     </div>
 
-
     <div class="footer">
+        <div class="footer__col">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <div class="footer__col">
+            <p class="footer__col-title">COMPANY</p>
+            <a href="#" class="footer__link">About TripOp</a>
+            <a href="#" class="footer__link">Work with Us</a>
+            <a href="#" class="footer__link">Press Room</a>
+            <a href="#" class="footer__link">Become a Partner</a>
+        </div>
+        <div class="footer__col">
+            <p class="footer__col-title">DISCOVER</p>
+            <a href="#" class="footer__link">How to Book?</a>
+            <a href="#" class="footer__link">Methods of Payment</a>
+            <a href="#" class="footer__link">General Conditions</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+            <a href="#" class="footer__link">Site Map</a>
+        </div>
+        <div class="footer__col">
+            <p class="footer__col-title">CONNECT WITH US</p>
+            <a href="#" class="footer__link">
+                <img class="footer__link-icon" src="/images/contact.png" alt="">
+                Contact Us
+            </a>
+            <a href="#" class="footer__link">
+                <img class="footer__link-icon" src="/images/facebook.png" alt="">
+                Facebook
+            </a>
+            <a href="#" class="footer__link">
+                <img class="footer__link-icon" src="/images/instagram.png" alt="">
+                Instagram
+            </a>
+            <a href="#" class="footer__link">
+                <img class="footer__link-icon" src="/images/youtube.png" alt="">
+                Youtube
+            </a>
+            <a href="#" class="footer__link">
+                <img class="footer__link-icon" src="/images/email.png" alt="">
+                Newsletter
+            </a>
+        </div>
+        <div class="footer__col footer__col-blog">
+            <p class="footer__col-title">BLOG</p>
+            <a href="#" class="footer__link">Choosing A Static Caravan</a>
+            <a href="#" class="footer__link">Cost Cutting Ideas For Your Wedding</a>
+            <a href="#" class="footer__link">Do A Sporting Stag Do In Birmingham</a>
+            <a href="#" class="footer__link">Mother Earth Hosts Our Travels</a>
+            <a href="#" class="footer__link">Trip To Iqaluit In Nunavut A Canadian Arctic City</a>
+        </div>
+        <div class="footer__copyright">
+            © 2016 All rights reserved.
+        </div>
     </div><!--footer-->
-<script src="js/libs.js"></script>
-<script src="js/script.min.js"></script>
+
 </body>
 </html>
