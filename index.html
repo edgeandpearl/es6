@@ -9,19 +9,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=3,user-scalable=1"/>
     <link rel="stylesheet" href="css/styles.css">
-    <script>
-        function script() {
-            alert("I'm the ad");
-        };
-
-        document.getElementById('kek').onclick=function () {
-            script();
-        };
-    </script>
 </head>
 <body class="dev">
 
     <div class="top-block">
+        <div class="top-block__inner-border"></div>
         <h1 class="top-block__header">Cuba</h1>
         <div class="top-block__text">Explore the world of Casas & Cadillacs</div>
     </div>
@@ -30,7 +22,7 @@
         <div class="menu with-bottom-border">
             <div class="menu__content">
                 <a href="#" class="menu__item menu__item-active">Summary</a>
-                <a href="#" id="kek" class="menu__item">General</a>
+                <a href="#" class="menu__item">General</a>
                 <a href="#" class="menu__item">Sights</a>
                 <a href="#" class="menu__item">Weather</a>
                 <a href="#" class="menu__item">What to Do</a>
@@ -43,6 +35,7 @@
             <h2 class="block-header">Why you'll love vacation in Cuba</h2>
             <div class="block-text">
                 It always had the allure a forbidden fruit. I love it for its uniqueness, creativity and survivalist spirit. I love it because, despite 60 years of setbacks, it remains an upbeat and open place. Walk down the street with a Cuban friend and, within one block, you’ll have received five handshakes, four kisses, three greetings of ‘dime hermano!’ and at least two invites into someone’s house.
+                <span class="block-text__cut">Read&nbsp;More&nbsp;&raquo;</span>
             </div>
             <div class="stats">
                 <span class="stats__item">
@@ -72,10 +65,11 @@
             <h2 class="block-header">What Cuba is about</h2>
             <div class="block-text">
                 Cuba is like a prince in a poor man’s coat; behind the sometimes shabby facades, gold dust lingers. It’s these rich dichotomies that make travel here the exciting. Trapped in a time warp and reeling from an economic embargo that has grated for more than half a century, this is a country where you can wave goodbye to everyday assumptions and expect the unexpected.
+                <span class="block-text__cut">Read&nbsp;More&nbsp;&raquo;</span>
             </div>
 
             <div class="image-with-overlay-capture">
-                <div class="overlay-capture">
+                <div class="overlay-capture overlay-capture_left">
                     <div class="overlay-capture__content">
                         <h3 class="overlay-capture__header">Historical Heritage</h3>
                         <p class="overlay-capture__text">
@@ -109,6 +103,34 @@
             <img class="cadillac__image" src="./images/cadillac.png" alt="cadillac">
             <img class="cadillac__shadow" src="./images/car-shadow.png" alt="">
 
+            <div class="yellow-nipple yellow-nipple-1">
+                <div class="caption-shown-on-hover">
+                    <div class="caption-shown-on-hover__line"></div>
+                    <div class="caption-shown-on-hover__text">Covertible Roof</div>
+                </div>
+            </div>
+
+            <div class="yellow-nipple yellow-nipple-2">
+                <div class="caption-shown-on-hover">
+                    <div class="caption-shown-on-hover__line"></div>
+                    <div class="caption-shown-on-hover__text">Soft Kitty</div>
+                </div>
+            </div>
+
+            <div class="yellow-nipple yellow-nipple-3">
+                <div class="caption-shown-on-hover">
+                    <div class="caption-shown-on-hover__line"></div>
+                    <div class="caption-shown-on-hover__text">Warm Kitty</div>
+                </div>
+            </div>
+
+            <div class="yellow-nipple yellow-nipple-4">
+                <div class="caption-shown-on-hover">
+                    <div class="caption-shown-on-hover__line"></div>
+                    <div class="caption-shown-on-hover__text">Little Ball of Fur</div>
+                </div>
+            </div>
+
             <div class="block-text">
                 The American trade embargo with Cuba in 1960 had the effect of instantly separating thousands of 1940s and 1950s Detroit-built cars from their spare parts supply. Convertibles were always popular, thanks to year-round tropical weather. The place for posing with your ride is hard to miss in Havana. The squares around Capitolio, a flattering copy of Washington’s Capitol building, are lined with 50-year-old American cars during daylight hours.
             </div>
@@ -126,57 +148,63 @@
     </div>
 
     <div class="footer">
-        <div class="footer__col">
-            <img src="./images/logo.png" alt="">
-        </div>
-        <div class="footer__col">
-            <p class="footer__col-title">COMPANY</p>
-            <a href="#" class="footer__link">About TripOp</a>
-            <a href="#" class="footer__link">Work with Us</a>
-            <a href="#" class="footer__link">Press Room</a>
-            <a href="#" class="footer__link">Become a Partner</a>
-        </div>
-        <div class="footer__col">
-            <p class="footer__col-title">DISCOVER</p>
-            <a href="#" class="footer__link">How to Book?</a>
-            <a href="#" class="footer__link">Methods of Payment</a>
-            <a href="#" class="footer__link">General Conditions</a>
-            <a href="#" class="footer__link">Privacy Policy</a>
-            <a href="#" class="footer__link">Site Map</a>
-        </div>
-        <div class="footer__col">
-            <p class="footer__col-title">CONNECT WITH US</p>
-            <a href="#" class="footer__link">
-                <img class="footer__link-icon" src="/images/contact.png" alt="">
-                Contact Us
-            </a>
-            <a href="#" class="footer__link">
-                <img class="footer__link-icon" src="/images/facebook.png" alt="">
-                Facebook
-            </a>
-            <a href="#" class="footer__link">
-                <img class="footer__link-icon" src="/images/instagram.png" alt="">
-                Instagram
-            </a>
-            <a href="#" class="footer__link">
-                <img class="footer__link-icon" src="/images/youtube.png" alt="">
-                Youtube
-            </a>
-            <a href="#" class="footer__link">
-                <img class="footer__link-icon" src="/images/email.png" alt="">
-                Newsletter
-            </a>
-        </div>
-        <div class="footer__col footer__col-blog">
-            <p class="footer__col-title">BLOG</p>
-            <a href="#" class="footer__link">Choosing A Static Caravan</a>
-            <a href="#" class="footer__link">Cost Cutting Ideas For Your Wedding</a>
-            <a href="#" class="footer__link">Do A Sporting Stag Do In Birmingham</a>
-            <a href="#" class="footer__link">Mother Earth Hosts Our Travels</a>
-            <a href="#" class="footer__link">Trip To Iqaluit In Nunavut A Canadian Arctic City</a>
-        </div>
-        <div class="footer__copyright">
-            © 2016 All rights reserved.
+        <div class="footer__content">
+            <div class="footer__col">
+                <img src="./images/logo.png" alt="">
+                <select class="footer__dropdown" name="currency">
+                    <option value="usd" class="footer__dropdown-option">&nbsp;US Dollar</option>
+                    <option value="euro" class="footer__dropdown-option">&nbsp;Also US Dollar</option>
+                </select>
+            </div>
+            <div class="footer__col">
+                <p class="footer__col-title">COMPANY</p>
+                <a href="#" class="footer__link">About TripOp</a>
+                <a href="#" class="footer__link">Work with Us</a>
+                <a href="#" class="footer__link">Press Room</a>
+                <a href="#" class="footer__link">Become a Partner</a>
+            </div>
+            <div class="footer__col">
+                <p class="footer__col-title">DISCOVER</p>
+                <a href="#" class="footer__link">How to Book?</a>
+                <a href="#" class="footer__link">Methods of Payment</a>
+                <a href="#" class="footer__link">General Conditions</a>
+                <a href="#" class="footer__link">Privacy Policy</a>
+                <a href="#" class="footer__link">Site Map</a>
+            </div>
+            <div class="footer__col">
+                <p class="footer__col-title">CONNECT WITH US</p>
+                <a href="#" class="footer__link">
+                    <img class="footer__link-icon" src="/images/contact.png" alt="">
+                    Contact Us
+                </a>
+                <a href="#" class="footer__link">
+                    <img class="footer__link-icon" src="/images/facebook.png" alt="">
+                    Facebook
+                </a>
+                <a href="#" class="footer__link">
+                    <img class="footer__link-icon" src="/images/instagram.png" alt="">
+                    Instagram
+                </a>
+                <a href="#" class="footer__link">
+                    <img class="footer__link-icon" src="/images/youtube.png" alt="">
+                    Youtube
+                </a>
+                <a href="#" class="footer__link">
+                    <img class="footer__link-icon" src="/images/email.png" alt="">
+                    Newsletter
+                </a>
+            </div>
+            <div class="footer__col footer__col-blog">
+                <p class="footer__col-title">BLOG</p>
+                <a href="#" class="footer__link">Choosing A Static Caravan</a>
+                <a href="#" class="footer__link">Cost Cutting Ideas For Your Wedding</a>
+                <a href="#" class="footer__link">Do A Sporting Stag Do In Birmingham</a>
+                <a href="#" class="footer__link">Mother Earth Hosts Our Travels</a>
+                <a href="#" class="footer__link">Trip To Iqaluit In Nunavut A Canadian Arctic City</a>
+            </div>
+            <div class="footer__copyright">
+                © 2016 All rights reserved.
+            </div>
         </div>
     </div><!--footer-->
 

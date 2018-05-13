@@ -17,19 +17,31 @@
 
 body {
   //background: url("/images/bg.jpg") center top no-repeat;
-  & > * {
-    opacity: 0.7;
-  }
+  //& > * {
+  //  opacity: 0.7;
+  //}
 }
 
 .top-block {
   font-family: georgia;
   min-height: 700px;
+  min-width: 1440px;
   text-align: center;
   text-shadow: 0 4px 4px rgba(0,0,0,0.5);
   background: url("/images/top.png") center bottom no-repeat;
   background-size: cover;
   position: relative;
+
+  &__inner-border {
+    width: 1360px;
+    height: 620px;
+    border: 2px solid #ECB84C;
+    border-bottom: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 38px auto;
+  }
 
   &__header {
     font-size: 200px;
@@ -38,14 +50,35 @@ body {
     padding-top: 250px;
   }
 
+
   &__text {
-    color: #fff;
     position: absolute;
-    bottom: 30px;
-    width: 100%;
-    font-weight: 100;
+    font-family: georgia;
     font-size: 24px;
     text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+    color: #ffffff;
+    bottom: 30px;
+    width: 100%;
+
+    &:before, &:after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 469px;
+      height: 2px;
+      vertical-align: middle;
+      background: #ECB84C;
+    }
+
+    &:before {
+      left: -10px;
+      margin: 0 0 0 -50%;
+    }
+
+    &:after {
+      left: 10px;
+      margin: 0 -50% 0 0;
+    }
   }
 }
 
@@ -103,6 +136,15 @@ body {
   font-family: avenirnext;
   margin: 41px auto;
   max-width: 970px;
+
+  &__cut {
+    color: #ecb84c;
+
+    &:hover {
+      font-weight: 900;
+      cursor: pointer;
+    }
+  }
 }
 
 .stats {
@@ -150,11 +192,39 @@ body {
     right: 0;
   }
 
+  &_right:before, &_right:after, &_left:before, &_left:after {
+    content: '';
+    width: 33px;
+    height: 33px;
+    position: absolute;
+  }
+
+  &_right:before, &_left:before {
+    top: 20px;
+    border-top: 2px solid #ECB84C;
+  }
+
+  &_right:before, &_left:after {
+    right: 20px;
+    border-right: 2px solid #ECB84C;
+  }
+
+  &_right:after, &_left:before {
+    left: 20px;
+    border-left: 2px solid #ECB84C;
+  }
+
+  &_right:after, &_left:after {
+    bottom: 20px;
+    border-bottom: 2px solid #ECB84C;
+  }
+
+  //omg
+
   &__content {
     width: 390px;
     height: 208px;
     margin: 16px;
-    border: 2px solid #ECB84C;
     padding: 21px;
   }
 
@@ -192,6 +262,7 @@ body {
 
 .cadillac {
   padding-bottom: 38px;
+  position: relative;
 
   &__image {
     margin-top: 76px;
@@ -200,6 +271,69 @@ body {
   &__shadow {
     margin: -18px 0 -3px;
   }
+}
+
+.yellow-nipple {
+  background: url("/images/nipple.png") center top no-repeat;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+
+  &-1 {
+    top: 220px;
+    right: 388px;
+  }
+
+  &-2 {
+    top: 261px;
+    left: 162px;
+  }
+
+  &-3 {
+    top: 260px;
+    left: 508px;
+  }
+
+  &-4 {
+    top: 422px;
+    right: 315px;
+  }
+}
+
+.caption-shown-on-hover {
+  display: none;
+  &__line {
+    width: 180px;
+    height: 10px;
+    border-bottom: 1px solid #ECB84C;
+    -webkit-transform: rotate(135deg);
+    position: absolute;
+    bottom: 70px;
+    left: -7px;
+  }
+
+  &__text {
+    font-family: avenirnext;
+    font-size: 16px;
+    font-weight: 900;
+    color: #505050;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 142px;
+    left: 142px;
+    border-bottom: 1px solid #ECB84C;
+    padding-bottom: 10px;
+    text-shadow: 0 0 5px white, 0 0 2px white;
+  }
+
+}
+
+.yellow-nipple:hover {
+  cursor: pointer;
+}
+
+.yellow-nipple:hover .caption-shown-on-hover{
+  display: inline-block;
 }
 
 .with-short-bottom-border:after {
@@ -221,12 +355,33 @@ body {
   background-color: #F8F8F8;
   height: 314px;
   margin-top: 10px;
-  padding: 62px;
+  padding: 62px 0;
+  border-top: 1px solid #D0D4D8;
+
+  &__content{
+    margin: 0 auto;
+    min-width: 1115px;
+    position: relative;
+    padding-left: 10px;
+    width: 1180px;
+  }
 
   &__col {
     display: inline-block;
     vertical-align: top;
     width: 196px;
+  }
+
+  &__dropdown {
+    -webkit-appearance: none;
+    width: 140px;
+    margin: 22px auto;
+    height: 30px;
+    background: url("/images/dropdown.png") no-repeat 95%;
+
+    &-option {
+      margin-left: 10px;
+    }
   }
 
   &__col-blog {
@@ -247,6 +402,10 @@ body {
     font-size: 14px;
     margin: 16px auto;
     vertical-align: middle;
+
+    &:hover {
+      color: #909090;
+    }
   }
 
   &__link-icon {
@@ -259,5 +418,6 @@ body {
     font-size: 14px;
     text-align: center;
     margin-top: 26px;
+    position: relative;
   }
 }
