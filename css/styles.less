@@ -106,7 +106,7 @@ body {
       color: #505050;
     }
 
-    &-active {
+    &_active {
       color: #4e5665;
       border-bottom: 5px solid #ECB84C;
     }
@@ -172,7 +172,7 @@ body {
   }
 }
 
-.image-with-overlay-capture {
+.image_with-overlay-capture {
   width: 970px;
   height: 464px;
   margin: 66px auto;
@@ -188,33 +188,33 @@ body {
   margin-top: 70px;
   box-shadow: 0 0 40px rgba(0,0,0,0.5);
 
-  &_right {
+  &__right {
     right: 0;
   }
 
-  &_right:before, &_right:after, &_left:before, &_left:after {
+  &__right:before, &__right:after, &__left:before, &__left:after {
     content: '';
     width: 33px;
     height: 33px;
     position: absolute;
   }
 
-  &_right:before, &_left:before {
+  &__right:before, &__left:before {
     top: 20px;
     border-top: 2px solid #ECB84C;
   }
 
-  &_right:before, &_left:after {
+  &__right:before, &__left:after {
     right: 20px;
     border-right: 2px solid #ECB84C;
   }
 
-  &_right:after, &_left:before {
+  &__right:after, &__left:before {
     left: 20px;
     border-left: 2px solid #ECB84C;
   }
 
-  &_right:after, &_left:after {
+  &__right:after, &__left:after {
     bottom: 20px;
     border-bottom: 2px solid #ECB84C;
   }
@@ -246,7 +246,7 @@ body {
   z-index: 1;
   position: absolute;
 
-  &_right {
+  &__right {
     right: 0;
   }
 }
